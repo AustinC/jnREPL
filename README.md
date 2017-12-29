@@ -1,6 +1,6 @@
 # jnREPL
 This library facilitates embedding a Clojure nREPL within a Java application.
-The API has two methods:
+The API has two static methods:
 
     Jnrepl.startRepl();
     Jnrepl.shutdownRepl();
