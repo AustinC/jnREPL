@@ -45,6 +45,11 @@
             <artifactId>tools.nrepl</artifactId>
             <version>0.2.12</version>
         </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
     </dependencies>
 
 </project>
