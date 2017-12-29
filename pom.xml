@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>in.hiaust</groupId>
+    <artifactId>jnrepl</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>jnREPL</name>
+    <description>Embed a Clojure nREPL in Java</description>
+    <url>https://github.com/AustinC/jnREPL</url>
+
+    <licenses>
+        <license>
+            <name>Unlicense</name>
+            <url>http://unlicense.org/</url>
+        </license>
+    </licenses>
+
+    <developers>
+        <developer>
+            <name>Austin Chamberlin</name>
+            <email>austin.r.chamberlin@gmail.com</email>
+        </developer>
+    </developers>
+
+    <scm>
+        <url>https://github.com/AustinC/jnREPL.git</url>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.clojure</groupId>
+            <artifactId>clojure</artifactId>
+            <version>1.9.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.clojure</groupId>
+            <artifactId>tools.nrepl</artifactId>
+            <version>0.2.12</version>
+        </dependency>
+    </dependencies>
+
+</project>
