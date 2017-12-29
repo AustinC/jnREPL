@@ -24,7 +24,7 @@ public class Jnrepl {
             IFn server = Clojure.var("clojure.tools.nrepl.server", "start-server");
             serverInstance = server.invoke(Clojure.read(":port"), port);
 
-            logger.info("Started clojure nREPL on port %s", port);
+            logger.info("Started clojure nREPL on port {}", port);
         }
         catch (Throwable e) {
             logger.error("Error starting nrepl", e);
@@ -35,6 +35,7 @@ public class Jnrepl {
      * Shutdown the nREPL server
      */
     public static synchronized void shutdownRepl() {
+        logger.info("Shutting down nrepl");
         if (null == serverInstance) {
             return;
         }
