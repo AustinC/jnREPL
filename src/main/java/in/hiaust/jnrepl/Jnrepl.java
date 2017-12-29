@@ -16,6 +16,10 @@ public class Jnrepl {
      */
     public static synchronized void startRepl() {
 
+        if (null != serverInstance) {
+            return;
+        }
+
         try {
             IFn require = Clojure.var("clojure.core", "require");
             require.invoke(Clojure.read("clojure.tools.nrepl.server"));
