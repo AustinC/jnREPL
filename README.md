@@ -2,8 +2,8 @@
 This library facilitates embedding a Clojure nREPL within a Java application.
 The API has two static methods:
 
-    Jnrepl.startRepl();
-    Jnrepl.shutdownRepl();
+    Jnrepl.startRepl();    // start an nREPL server
+    Jnrepl.shutdownRepl(); // shut it down
 
 
 The repl port defaults to `9090`. It can be set with the JVM arg `-Djnrepl.port=9091`
