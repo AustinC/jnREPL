@@ -1,4 +1,4 @@
-package in.hiaust.jnrepl;
+package com.github.austinc.jnrepl;
 
 import clojure.java.api.Clojure;
 import clojure.lang.IFn;
