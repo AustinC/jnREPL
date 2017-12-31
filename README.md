@@ -12,3 +12,11 @@ The repl port defaults to `9090`. It can be set with the JVM arg `-Djnrepl.port=
 ### Example connecting with leiningen
 
 `$ lein repl :connect localhost:9090`
+
+### Maven coordinates
+
+    <dependency>
+       <groupId>com.github.austinc</groupId>
+        <artifactId>jnrepl</artifactId>
+        <version>1.0</version>
+    </dependency>
