@@ -18,5 +18,5 @@ The repl port defaults to `9090`. It can be set with the JVM arg `-Djnrepl.port=
     <dependency>
        <groupId>com.github.austinc</groupId>
         <artifactId>jnrepl</artifactId>
-        <version>1.0</version>
+        <version>1.1</version>
     </dependency>
