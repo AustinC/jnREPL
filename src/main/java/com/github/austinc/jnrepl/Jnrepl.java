@@ -15,16 +15,23 @@ public class Jnrepl {
      * Start a clojure nREPL server
      */
     public static synchronized void startRepl() {
+        Long port = Long.parseLong(System.getProperty("jnrepl.port", "9090"));
+        startRepl(port);
+    }
+
+    /**
+     * Start a clojure nREPL server on the given port;
+     */
+    public static synchronized void startRepl(long port) {
 
         if (null != serverInstance) {
+            logger.warn("nrepl server already running, refusing to start another.");
             return;
         }
 
         try {
             IFn require = Clojure.var("clojure.core", "require");
             require.invoke(Clojure.read("clojure.tools.nrepl.server"));
-
-            Long port = Long.parseLong(System.getProperty("jnrepl.port", "9090"));
             IFn server = Clojure.var("clojure.tools.nrepl.server", "start-server");
             serverInstance = server.invoke(Clojure.read(":port"), port);
 
